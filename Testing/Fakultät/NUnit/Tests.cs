@@ -1,20 +1,15 @@
 ﻿using NUnit.Framework;
-using Fakultät;
 
 namespace NUnit
 {
+    [TestFixture]
     public class Tests
     {
-        [TestFixture]
-
-        public class test1
+        [Test, Category("Gerüsttest")]
+        public void BerechneFakultät()
         {
-            [Test, Category("Gerüsttest")]
-            public void Berehnung()
-            {
-                int ergebnis = cons_Fakultät.BerechneFakultät(5, 5);
-                Assert.AreEqual(ergebnis, 120);
-            }
+            var ergebnis = Fakultät.Fakultät.BerechneFakultät(5);
+            Assert.AreEqual(120, ergebnis);
         }
     }
 }

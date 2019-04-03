@@ -6,7 +6,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{941F44E0-013C-4D25-896B-D97FFF5E85AF}</ProjectGuid>
+    <ProjectGuid>{79E37F7B-A34E-46C8-A9DB-42B273810F8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NUnit</RootNamespace>
@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fakultät\Fakultät.csproj">
-      <Project>{25ea82fd-0adc-4bba-aa99-8cb3dcb475cc}</Project>
+      <Project>{ff8cc850-e59b-44df-a644-cbcefc99812c}</Project>
       <Name>Fakultät</Name>
     </ProjectReference>
   </ItemGroup>
