@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0BAE5C4-3055-4986-961D-A3111A14A41E}</ProjectGuid>
+    <ProjectGuid>{F6B95A75-15A2-4824-8560-A40A5928518F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HöchsteZahl</RootNamespace>
-    <AssemblyName>HöchsteZahl</AssemblyName>
+    <RootNamespace>Ratespiel</RootNamespace>
+    <AssemblyName>Ratespiel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HöchsteZahl.cs" />
+    <Compile Include="Ratespiel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

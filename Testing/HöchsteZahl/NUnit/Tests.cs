@@ -1,9 +1,5 @@
-﻿using System;
-using System.IO;
-using NUnit.Framework;
-using HöchsteZahl;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace NUnit
 {
@@ -15,14 +11,14 @@ namespace NUnit
             [Test, Category("Gerüsttest")]
             public void Berechnung()
             {
-                List<int> test = new List<int>();
+                var test = new List<int>();
                 test.Add(7);
                 test.Add(88);
                 test.Add(66);
                 test.Add(55);
                 test.Add(11);
 
-                int ergebnis = cons_HöchsteZahl.ErkenneZahl(test);
+                var ergebnis = HöchsteZahl.HöchsteZahl.ErkenneZahl(test);
                 Assert.AreEqual(ergebnis, 88);
             }
         }

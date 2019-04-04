@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace HöchsteZahl
 {
-    class cons_HöchsteZahl
+    public class HöchsteZahl
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var eingabe = HoleZahlenEingabe();
             var maxzahl = ErkenneZahl(eingabe);
