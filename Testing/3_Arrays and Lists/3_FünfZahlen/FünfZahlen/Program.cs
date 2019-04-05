@@ -19,37 +19,32 @@ namespace FünfZahlen
             for (var iteration = 0; iteration < 5; iteration++)
             {
                 var eingabe = Console.ReadLine();
-                var ergebnis = 0;
-                var gültigeZahl = int.TryParse(eingabe, out ergebnis);
 
-                if (gültigeZahl)
+                if (!PrüfeObGültig(eingabe, zahlen))
                 {
-                    if (zahlen.Contains(ergebnis))
-                    {
-                        Console.WriteLine(ergebnis + " gibt es bereits.\r\nVersuchen Sie es erneut!");
-                        iteration--;
-                    }
-                    else
-                    {
-                        zahlen[iteration] = ergebnis;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Ungültige Eingabe!");
+                    Fehler();
                     iteration--;
                 }
+                else
+                    zahlen[iteration] = Convert.ToInt32(eingabe);
             }
             return zahlen;
+        }
+        public static bool PrüfeObGültig(string eingabe, int[] zahlenArray)
+        {
+            int ergebnis;
+            if (!int.TryParse(eingabe, out ergebnis))
+                return false;
+            return !zahlenArray.Contains(ergebnis);
+        }
+        public static void Fehler()
+        {
+            Console.WriteLine("Ungültige Eingabe!");
         }
         internal static void Ausgabe(int[] zahlenArray)
         {
             var zahlenListeSortiert = zahlenArray.ToList().OrderBy(p => p).ToList();
-            foreach (var zahl in zahlenListeSortiert)
-            {
-                Console.Write(zahl);
-            }
-            Console.WriteLine();
+            Console.WriteLine(string.Join(", ", zahlenListeSortiert));
         }
     }
 }
