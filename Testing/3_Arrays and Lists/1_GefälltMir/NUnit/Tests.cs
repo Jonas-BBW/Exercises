@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net.Mime;
-using System.Text;
 using NUnit.Framework;
 using GefälltMir;
 
@@ -20,7 +17,7 @@ namespace NUnit
 
             var namenListe = new List<string>() { "Jonas" };
             Program.Ausgabe(namenListe);
-            Assert.AreEqual("Jonas mag deinen Beitrag.", ergebnisAusgabe.ToString().Remove(ergebnisAusgabe.ToString().Length - 2)); //Löscht die letzten Beiden Zeichen (\r und \n == Zeilenumbruch von Console.WriteLine())
+            Assert.AreEqual("Jonas mag deinen Beitrag.", ergebnisAusgabe.ToString().Remove(ergebnisAusgabe.ToString().Length - 2)); 
         }
         [Test, Category("zwei Personen")]
         public static void ZweiGefälltMirTest()

@@ -9,8 +9,8 @@ namespace HöchsteZahl
         public static void Main(string[] args)
         {
             var eingabe = HoleZahlenEingabe();
-            var maxzahl = ErkenneZahl(eingabe);
-            ZeigeZahl(maxzahl);
+            var höchsteZahl = ErkenneZahl(eingabe);
+            ZeigeZahl(höchsteZahl);
         }
 
         private static List<int> HoleZahlenEingabe()
@@ -27,16 +27,12 @@ namespace HöchsteZahl
 
         internal static int ErkenneZahl(List<int> eingabe)
         {
-            var maxzahl = eingabe.Max();
-            return maxzahl;
+            return eingabe.Max();
         }
 
-        private static void ZeigeZahl(int maxzahl)
+        private static void ZeigeZahl(int höchsteZahl)
         {
-            Console.WriteLine("\nDie größte Zahl ist {0}.\n", maxzahl);
-            Console.WriteLine("\nDrücken Sie Enter um zu beenden!", maxzahl);
-            Console.ReadLine();
-            Environment.Exit(0);
+            Console.WriteLine("\nDie größte Zahl ist {0}.\n", höchsteZahl);
         }
     }
 }
