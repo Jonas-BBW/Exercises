@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateiWortzähler", "DateiWortzähler\DateiWortzähler.csproj", "{BD257375-1582-4643-809B-28DB5A1F29D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit", "NUnit\NUnit.csproj", "{08EB559B-D397-4334-9C08-E2C2166433AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD257375-1582-4643-809B-28DB5A1F29D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD257375-1582-4643-809B-28DB5A1F29D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD257375-1582-4643-809B-28DB5A1F29D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD257375-1582-4643-809B-28DB5A1F29D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EB559B-D397-4334-9C08-E2C2166433AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EB559B-D397-4334-9C08-E2C2166433AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EB559B-D397-4334-9C08-E2C2166433AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EB559B-D397-4334-9C08-E2C2166433AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
